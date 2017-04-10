@@ -162,7 +162,7 @@ nav.solid #logo .logo {
   background: #fff !important;
   transform: rotate(-45deg);
 }
-
+/*GALERIA CODERS*/
 #galeria{
   top: 70px;
   width: 100%;
@@ -170,6 +170,7 @@ nav.solid #logo .logo {
   z-index: 100;
   position: relative;
   text-align: center;
+  color: rgba(252,193,17,1);
   min-height: 100%;
 }
 h2{
@@ -186,6 +187,7 @@ ul#coders{
   position: relative;
   min-height:100%;
   line-height: 0;
+  display: :inline-block;
 }
 ul#coders li{
   width: 400px;
@@ -196,6 +198,7 @@ ul#coders li{
   display: inline-block;
   list-style: none;
 }
+
 div.grid{
   width: 400px;
   height: 400px;
@@ -205,26 +208,27 @@ div.grid{
   display: inline-block;
   text-align: center;
   cursor: pointer;
-  transition: 0.4S
+  transition: 0.4S;
+  background-color: rgba(252, 193, 17, 1);
   overflow:hidden;
+}
+div.grid:hover{
+  z-index: 1000;
+  transition: background-color ease 4s;
 }
 figure{
   margin: 0;
   left: 0;
   display: inline-block;
 }
-img.image-box{
-  display: inline-block;
-  text-align: center;
-  width: 400px;
-  height: 400px;
-  position: relative;
-  cursor: pointer;
-  transition: 0.6s ease-in-out;
+figure:hover span.name{
+  opacity: 1;
+  transition: :0.4s
 }
 
-figcaption{
-  display: block;
+figure:hover{
+  opacity: 1;
+  transition: 0.4s;
 }
 span.name{
   margin: 0;
@@ -245,7 +249,24 @@ span.name{
         z-index: 2000;
         transition: 0.6s;
 }
-figure:hover span.name{
-  opacity: 1;
-  transition: :0.4s
+img.image-box{
+  display: inline-block;
+  text-align: center;
+  width: 400px;
+  height: 400px;
+  padding: 0;
+  position: relative;
+  cursor: pointer;
+  transition: 0.6s ease-in-out;
+}
+img.image-box:hover{
+  opacity:0.5;
+  -webkit-transform:scale(1.1);
+  -moz-transform:scale(1.1);
+  -o-transform:scale(1.1);
+  -ms-transform:scale(1.1);
+  transition: background-color ease 4s;
+}
+figcaption{
+  display: block;
 }
